@@ -1,0 +1,155 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partymise – Where Moments Turn into Memories</title>
+    <style>
+        body {
+            background-color: #efe5d9;
+            font-family: 'Poppins', sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+            color: #555;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .social-links a {
+            margin-left: 15px;
+            text-decoration: none;
+            font-size: 18px;
+            color: #555;
+        }
+        .carousel {
+            display: flex;
+            overflow: auto;
+            scroll-snap-type: x mandatory;
+            margin: 20px 0;
+        }
+        .carousel img {
+            width: 100%;
+            scroll-snap-align: center;
+            border-radius: 10px;
+        }
+        .form-container {
+            background: #fff;
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .form-container input, .form-container select, .form-container textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-container button {
+            padding: 10px 20px;
+            background-color: #ffbe88;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .form-container button:hover {
+            background-color: #ff9c58;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #fff;
+            box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Partymise</h1>
+        <div class="social-links">
+            <a href="https://carousell.com" target="_blank">Carousell</a>
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+            <a href="https://tiktok.com" target="_blank">TikTok</a>
+        </div>
+    </div>
+
+    <div class="carousel">
+        <img src="https://via.placeholder.com/800x400?text=Partymise+1" alt="Carousel Image 1">
+        <img src="https://via.placeholder.com/800x400?text=Partymise+2" alt="Carousel Image 2">
+        <img src="https://via.placeholder.com/800x400?text=Partymise+3" alt="Carousel Image 3">
+    </div>
+
+    <div class="form-container">
+        <h2>Get a Quote</h2>
+        <form action="mailto:youremail@example.com" method="POST" enctype="text/plain">
+            <label for="date">When is your event?</label>
+            <input type="date" id="date" name="event_date" required>
+
+            <label for="time">What time is your event?</label>
+            <input type="time" id="time" name="event_time" required>
+
+            <label for="location">Where is your event?</label>
+            <input type="text" id="location" name="event_location" required>
+
+            <label for="theme">What is your preferred theme?</label>
+            <select id="theme" name="event_theme">
+                <option value="Pastel">Pastel</option>
+                <option value="Floral">Floral</option>
+                <option value="Disco">Disco</option>
+                <option value="Unicorn">Unicorn</option>
+                <option value="Princess">Princess</option>
+                <option value="Others">Others</option>
+            </select>
+
+            <label for="backdrop">What type of backdrop colour?</label>
+            <select id="backdrop" name="backdrop_color">
+                <option value="Pastel Rainbow">Pastel Rainbow</option>
+                <option value="White">White</option>
+                <option value="Pastel Pink">Pastel Pink</option>
+                <option value="Pink">Pink</option>
+                <option value="Shimmery Disco">Shimmery Disco</option>
+            </select>
+
+            <label for="wording">Any wording on the backdrop?</label>
+            <input type="text" id="wording" name="backdrop_wording">
+
+            <label for="balloon_garland">Any balloon garland around the backdrop? (+$200)</label>
+            <input type="checkbox" id="balloon_garland" name="balloon_garland">
+
+            <label for="columns">Any additional balloon columns? ($100/column)</label>
+            <input type="number" id="columns" name="balloon_columns" min="0">
+
+            <label for="name">How do we address you?</label>
+            <input type="text" id="name" name="client_name" required>
+
+            <label for="contact">How can we contact you?</label>
+            <input type="text" id="contact" name="contact_info" required>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>© 2025 Partymise. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
